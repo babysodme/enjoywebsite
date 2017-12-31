@@ -11,24 +11,24 @@ router.get('/', function(req, res, next) {
 });
 /* GET 门店 page. */
 router.get('/shop', function(req, res, next) {
-  res.render('shop') ;
+  res.render('shop', {title: '悦咖啡官网'}) ;
 });
 /* GET 关于我们 page. */
 router.get('/aboutus', function(req, res, next) {
-    res.render('aboutus');
+    res.render('aboutus', {title: '悦咖啡官网'});
   });
 /* GET 产品 page. */
   router.get('/product', function(req, res, next) {
-    res.render('product');
+    res.render('product', {title: '悦咖啡官网'});
   });
 /* GET 联系我们 page. */
   router.get('/contactus', function(req, res, next) {
-    res.render('contactus');
+    res.render('contactus', {title: '悦咖啡官网'});
   });
 
   /* GET 联系我们 page. */
   router.get('/join', function(req, res, next) {
-    res.render('join');
+    res.render('join', {title: '悦咖啡官网'});
   });
 
 
